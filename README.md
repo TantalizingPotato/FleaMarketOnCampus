@@ -21,6 +21,13 @@ An online Flea Market platform intended for students on campus, where you can bu
 
 每个用户拥有一个“收件箱”Message对象和一个“已发送的信件箱”Message对象。用户还拥有众多Item对象（拥有的Item数也可以为0），表示其上架的商品。用户还拥有一个购物车，一个已购买列表，一个已售出列表和一个正在架上的商品列表，它们都继承了ItenList这个父类。ItemList是Item的聚合。
 
+<font size=30><b> Sequence diagram: </b></font>
+![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/%E9%A1%BA%E5%BA%8F%E5%9B%BE_1.png)
+
+![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/%E9%A1%BA%E5%BA%8F%E5%9B%BE_2.jpg)
+
+![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/%E9%A1%BA%E5%BA%8F%E5%9B%BE_3.jpg)
+
 <font size=30><b> 时序图说明： </b></font>
 
 我们抽象出来基本的用户行为，分别是登录、搜索、购买、添加购物车、联系、上架物品。根据类图中划分的类以及属性和方法，我们定义了用户（买方和卖方）、ItemList（用来执行业务逻辑，比如通过ID查找物品、增删物品等）、Item（抽象的物品对象）、cart（抽象的购物车对象）、Manage(执行系统操作，如登录功能)
