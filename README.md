@@ -22,6 +22,7 @@ An online Flea Market platform intended for students on campus, where you can bu
 每个用户拥有一个“收件箱”Message对象和一个“已发送的信件箱”Message对象。用户还拥有众多Item对象（拥有的Item数也可以为0），表示其上架的商品。用户还拥有一个购物车，一个已购买列表，一个已售出列表和一个正在架上的商品列表，它们都继承了ItenList这个父类。ItemList是Item的聚合。
 
 <font size=30><b> Sequence diagram: </b></font>
+
 ![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/%E9%A1%BA%E5%BA%8F%E5%9B%BE_1.png)
 
 ![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/%E9%A1%BA%E5%BA%8F%E5%9B%BE_2.jpg)
