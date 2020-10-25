@@ -4,7 +4,7 @@ An online Flea Market platform intended for students on campus, where you can bu
 <font size=30><b> Use case diagram: </b></font>
 ![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/raw/master/FleaMarketUseCase.png)
 
-<font size=30><b>用例图说明：</b></font>
+#### 用例图说明：
 
 从用户视角来看，用户主要接触三大功能模块：购买，管理摊位及管理个人信息。
 
@@ -17,7 +17,7 @@ An online Flea Market platform intended for students on campus, where you can bu
 <font size=30><b> Class diagram: </b></font>
 ![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/raw/master/ClassUML_FleaMarket.png)
 
-<font size=30><b> 类图说明：</b></font>
+#### 类图说明：
 
 每个用户拥有一个“收件箱”Message对象和一个“已发送的信件箱”Message对象。用户还拥有众多Item对象（拥有的Item数也可以为0），表示其上架的商品。用户还拥有一个购物车，一个已购买列表，一个已售出列表和一个正在架上的商品列表，它们都继承了ItenList这个父类。ItemList是Item的聚合。
 
@@ -29,7 +29,7 @@ An online Flea Market platform intended for students on campus, where you can bu
 
 ![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/%E9%A1%BA%E5%BA%8F%E5%9B%BE_3.jpg)
 
-<font size=30><b> 时序图说明： </b></font>
+#### 时序图说明：
 
 我们抽象出来基本的用户行为，分别是登录、搜索、购买、添加购物车、联系、上架物品。根据类图中划分的类以及属性和方法，我们定义了用户（买方和卖方）、ItemList（用来执行业务逻辑，比如通过ID查找物品、增删物品等）、Item（抽象的物品对象）、cart（抽象的购物车对象）、Manage(执行系统操作，如登录功能)
 
@@ -45,9 +45,9 @@ An online Flea Market platform intended for students on campus, where you can bu
 <b>加入购物车：</b>买家通过AddItem函数传递给购物车对象“加入一条某ID的物品信息”，购物车传递ID给Itemlist搜索返回该物品，同步返回给买家“是否添加成功”
 Message和用户一一对应的。我们规定收件箱在卖家方，因此买家通过sendmessage发送消息给买家，同步返回消息是否发送成功。
 
-<font size = 34> <b>设计模式说明：</b></font>
+### 设计模式说明：
 
-<font size=30><b> 简单工厂模式 </b></font>
+#### 简单工厂模式 
 
 简单工厂模式有三个角色：工厂角色、抽象产品角色、具体产品角色。定义一个工厂类（工厂角色），它有一个产生产品对象的方法，该方法可以根据参数的不同返回不同类的实例。被创建的实例通常都具有共同的父类。
 
@@ -76,7 +76,7 @@ Item接口还包含若干接口方法
 如果需要额外加入对象，也可以引入配置文件，在不修改客户端代码的情况下更换和添加新的具体产品类。
 
 
-<font size=30><b> 观察者模式 </b></font>
+#### 观察者模式
 
 观察者模式包括四个角色，目标，具体目标，观察者，具体观察者。当一个对象的行为或者状态发生改变，它们之间会产生联动。是一种一对多的关系。
 
@@ -95,7 +95,7 @@ Item接口还包含若干接口方法
 观察者与观察目标之间是属于轻度的关联关系，并且是抽象耦合的，这样，对于两者来说都比较容易进行扩展。观察者模式将观察者和观察目标解耦，观察目标只知道观察者实现了某一接口。并不需要观察者的具体类是谁、做了些什么或者其他任何细节。任何时候我们都可以增加新的观察者。
 
 
-<font size=30><b>组合模式</b></font>
+#### 组合模式
 
 组合模式包含三个角色：抽象构件(component)、叶子构件(leaf)、容器构件(composite).它使客户端可以统一对待单个对象和组合对象，可以形成一种树形结构以表示具有部分-整体关系的层次结构。当容器对象的某一个方法被调用时，将遍历自身包含的叶子对象并调用执行叶子对象的对应方法。
 
@@ -106,7 +106,7 @@ Item接口还包含若干接口方法
 采用组合模式使客户端可以统一对待单个对象和组合对象。具体到我们的项目，即对于程序的其他部分而言，GiftPackage类和Toy, Garment, Book类几乎是没有区别的，可以统一作为Item接口的子类来对待。调用叶子类和容器类的方法也可以实现对应的“单一功能”和“组合功能”，而不必将“单个对象”和“组合对象”区别对待，这降低了程序的耦合性。
 
 
-<font size=30><b>程序截图：</b></font>
+### 程序截图：
 
 ![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/PrintScreen_1.png)
 ![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/PrintScreen_2.png)
