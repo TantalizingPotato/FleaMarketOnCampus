@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Flea
 {
-    class Cart
+    class ItemsOnShelf
     {
         public List<Item> items = new List<Item>();
         List<Item> Items

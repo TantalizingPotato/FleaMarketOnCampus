@@ -49,6 +49,10 @@ namespace Flea
             get;
             set;
         }
-        void ShowInfo();
+        string ShowInfo();
+
+        void AddGift(Item item);
+        void RemoveGift(Item item);
+        Item GetChild(int i);
     }
 }

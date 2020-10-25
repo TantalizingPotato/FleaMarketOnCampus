@@ -8,9 +8,9 @@ namespace Flea
 {
     class Book : Item
     {
-        public Book(string ID)
+        public Book(string name)
         {
-            this.ID = ID;
+            this.Name = name;
             Console.WriteLine("已上架一本书！");
         }
 
@@ -25,10 +25,27 @@ namespace Flea
         public DateTime TimeStamp { get; set; }
         public bool OnShelf { get { return OnShelf; } set { onShelf = value; if (onShelf == false) Console.WriteLine("书已下架，ID: " + ID); } }
 
-        public void ShowInfo()
+        public string ShowInfo()
         {
-            Console.WriteLine("书信息：\nID：" + ID + "\n名称：" + Name);
+            Console.WriteLine("书信息：名称：" + Name);
+            return "书信息：名称：" + Name;
         }
 
+
+        public void AddGift(Item item)
+        {
+            Console.WriteLine("对不起，不支持该方法！");
+        }
+
+        public void RemoveGift(Item item)
+        {
+            Console.WriteLine("对不起，不支持该方法！");
+        }
+
+        public Item GetChild(int i)
+        {
+            Console.WriteLine("对不起，不支持该方法！");
+            return null;
+        }
     }
 }

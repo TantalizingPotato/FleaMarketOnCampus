@@ -4,9 +4,9 @@ namespace Flea
 {
     class Toy : Item
     {
-        public Toy(string ID)
+        public Toy(string name)
         {
-            this.ID = ID;
+            this.Name = name;
             Console.WriteLine("上架一玩具！");
         }
 
@@ -21,9 +21,26 @@ namespace Flea
         public DateTime TimeStamp { get; set; }
         public bool OnShelf { get { return OnShelf; } set { onShelf = value; if (onShelf == false) Console.WriteLine("玩具已下架，ID: " + ID); } }
 
-        public void ShowInfo()
+        public string ShowInfo()
         {
-            Console.WriteLine("玩具信息");
+            Console.WriteLine("玩具信息：名称：" + Name);
+            return "玩具信息：名称：" + Name;
+        }
+
+        public void AddGift(Item item)
+        {
+            Console.WriteLine("对不起，不支持该方法！");
+        }
+
+        public void RemoveGift(Item item)
+        {
+            Console.WriteLine("对不起，不支持该方法！");
+        }
+
+        public Item GetChild(int i)
+        {
+            Console.WriteLine("对不起，不支持该方法！");
+            return null;
         }
 
     }
