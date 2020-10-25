@@ -45,7 +45,7 @@ An online Flea Market platform intended for students on campus, where you can bu
 <b>加入购物车：</b>买家通过AddItem函数传递给购物车对象“加入一条某ID的物品信息”，购物车传递ID给Itemlist搜索返回该物品，同步返回给买家“是否添加成功”
 Message和用户一一对应的。我们规定收件箱在卖家方，因此买家通过sendmessage发送消息给买家，同步返回消息是否发送成功。
 
-<font size = 32> <b>设计模式说明</b></font>
+<font size = 34> <b>设计模式说明：</b></font>
 
 <font size=30><b> 简单工厂模式 </b></font>
 
