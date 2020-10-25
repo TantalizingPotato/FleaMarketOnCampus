@@ -101,7 +101,7 @@ Item接口还包含若干接口方法
 
 在我们的项目中，Item(抽象产品)接口充当抽象构件，Book类,Garment类和Toy类继承Item接口，充当叶子构件，GiftPackage(礼包)类同样继承Item接口，充当容器构件。Item接口除了定义了一些属性外，还定义了四个方法： string ShowInfo(), void AddGift(Item), void RemoveGift(Item)和 Item GetChild(int). 所有继承Item接口的类（包括叶子类和容器类）都要实现这四个方法。对于叶子类而言， AddGift(Item)，RemoveGift(Item) 和 GetChild(int)方法并不完成实际功能，ShowInfo()方法则返回一个包含商品信息的字符串。对于容器类GiftPackage,AddGift(Item)，RemoveGift(Item) 和 GetChild(int)方法完成实际功能。并且，容器类GiftPackage的ShowInfo()方法会遍历自身包含的叶子对象，逐个调用它们的ShowInfo()方法；最终返回的字符串包含自身信息以及所有属于自身的叶子对象的信息。
 
-![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/Toys_Item_class_2.png)
+![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/Toy_Item_class_2.png)
 ![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/GiftPackage_Item_class.png)
 
 <b>优点:</b>
