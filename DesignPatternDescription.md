@@ -48,7 +48,6 @@
 
 观察者与被观察者之间是属于轻度的关联关系，并且是抽象耦合的，这样，对于两者来说都比较容易进行扩展。观察者模式将观察者和主题（被观察者）彻底解耦，主题只知道观察者实现了某一接口。并不需要观察者的具体类是谁、做了些什么或者其他任何细节。任何时候我们都可以增加新的观察者。
 
-
 <font size=30><b>程序截图：</b></font>
 
 ![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/PrintScreen_1.png)
