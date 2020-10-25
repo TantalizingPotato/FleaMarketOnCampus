@@ -14,9 +14,9 @@
 
 创建继承抽象类的实体类有：Book(书本类)、Garment(服装类)、Toy(玩具类)
 
-![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/Book_class.png)
-![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/Garment_class.png)
-![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/Toy_class.png)
+![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/Book_Item_class.png)
+![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/Garment_Item_class.png)
+![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/Toy_Item_class.png)
 
 创建一个工厂，只需要传入一个正确的参数，就可以获取所需要的对象，而无需知道其实现过程。那么使其可以根据传递过来的参数来实例化相应的对象：
 
@@ -38,7 +38,7 @@
 
 被观察者类Cart中有一个用来存放观察者对象Item的List，它是被观察者类的核心。AddItem方法是向这个List中添加观察者对象；Clear方法是从List中移除观察者对象。
 
-![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/Cart_observed.png)
+![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/Cart_Observed.png)
 
 观察者定义为接口，该接口声明了更新数据的方法。观察者有一个onshelf属性，在被观察者状态发生变化时，这个属性就会被触发改变。
 
