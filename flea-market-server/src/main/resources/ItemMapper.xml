@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whu.fleamarket.dao.ItemMapper">
+
+    <select id="findAll" resultType="com.whu.fleamarket.entity.Item">
+        select * from items
+    </select>
+
+    <select id="findAllOnShelf" resultType="com.whu.fleamarket.entity.Item">
+        select * from items where on_shelf = 1
+    </select>
+
+    <insert id="add" parameterType="com.whu.fleamarket.entity.Item">
+        insert into items
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="picUrl != null">
+                pic_url,
+            </if>
+            <if test="itemName != null">
+                item_name,
+            </if>
+            <if test="price != null">
+                price,
+            </if>
+            <if test="onShelf != null">
+                on_shelf,
+            </if>
+            <if test="ownerId != null">
+                owner_id,
+            </if>
+            <if test="category != null">
+                category,
+            </if>
+        </trim>
+        <trim prefix=" values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id},
+            </if>
+            <if test="picUrl != null">
+                #{picUrl},
+            </if>
+            <if test="itemName != null">
+                #{itemName},
+            </if>
+            <if test="price != null">
+                #{price},
+            </if>
+            <if test="onShelf != null">
+                #{onShelf},
+            </if>
+            <if test="ownerId != null">
+                #{ownerId},
+            </if>
+            <if test="category != null">
+                #{category},
+            </if>
+        </trim>
+    </insert>
+
+    <update id="update" parameterType="com.whu.fleamarket.entity.Item">
+        update items
+        <set>
+            <if test="picUrl != null">
+                pic_url = #{picUrl},
+            </if>
+            <if test="itemName != null">
+                item_name = #{itemName},
+            </if>
+            <if test="price != null">
+                price = #{price},
+            </if>
+            <if test="onShelf != null">
+                on_shelf = #{onShelf},
+            </if>
+            <if test="ownerId != null">
+                owner_id = #{ownerId},
+            </if>
+            <if test="category != null">
+                category = #{category},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <select id="queryById" resultType="com.whu.fleamarket.entity.Item" parameterType="java.lang.Integer">
+        select * from items where id = #{id}
+    </select>
+
+    <select id="queryByOwnerId" resultType="com.whu.fleamarket.entity.Item" parameterType="java.lang.Integer">
+        select * from items where owner_id = #{ownerId}
+    </select>
+
+    <select id="queryByItemName" resultType="com.whu.fleamarket.entity.Item" >
+        select * from items where item_name = #{itemName}
+    </select>
+
+    <delete id="deleteById" parameterType="java.lang.Integer">
+        delete from items
+        where id = #{id}
+    </delete>
+
+</mapper>

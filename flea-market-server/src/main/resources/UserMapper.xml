@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whu.fleamarket.dao.UserMapper">
+
+    <select id="findAll" resultType="com.whu.fleamarket.entity.User">
+        select * from users
+    </select>
+
+    <insert id="add" parameterType="com.whu.fleamarket.entity.User">
+        insert into users
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="username != null">
+                username,
+            </if>
+            <if test="password != null">
+                password,
+            </if>
+            <if test="address != null">
+                address,
+            </if>
+
+        </trim>
+        <trim prefix=" values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id},
+            </if>
+            <if test="username != null">
+                #{username},
+            </if>
+            <if test="password != null">
+                #{password},
+            </if>
+            <if test="address != null">
+                #{address},
+            </if>
+        </trim>
+    </insert>
+
+    <update id="update" parameterType="com.whu.fleamarket.entity.User">
+        update users
+        <set>
+            <if test="id != null">
+                id = #{id},
+            </if>
+            <if test="username != null">
+                username = #{username},
+            </if>
+            <if test="password != null">
+                password = #{password},
+            </if>
+            <if test="address != null">
+                address = #{address},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <select id="queryById" resultType="com.whu.fleamarket.entity.User" parameterType="java.lang.String">
+        select * from users where id = #{id}
+    </select>
+
+    <select id="queryByUsername" resultType="com.whu.fleamarket.entity.User" parameterType="java.lang.String">
+        select * from users where item_name = #{itemName}
+    </select>
+
+    <delete id="deleteById" parameterType="java.lang.String">
+        delete from users
+        where id = #{id}
+    </delete>
+
+</mapper>

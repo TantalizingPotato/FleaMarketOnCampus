@@ -1,0 +1,11 @@
+mybatis:
+  mapper-locations: ItemMapper.xml
+  type-aliases-package: com.whu.fleamarket.entity
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/work1?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
