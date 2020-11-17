@@ -1,6 +1,17 @@
 # FleaMarketOnCampus
 An online Flea Market platform intended for students on campus, where you can buy and sell second-hand goods.
 
+#### RESTful Web API doc:
+![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/swagger-ui.png)
+
+![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/swagger-ui_queryItemByItemName.png)
+
+![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/swagger-ui_postItem.png)
+
+![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/swagger-ui_queryUserByUsername.png)
+
+![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/swagger-ui_deleteUserById.png)
+
 <font size=30><b> Use case diagram: </b></font>
 ![Image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/raw/master/FleaMarketUseCase.png)
 
