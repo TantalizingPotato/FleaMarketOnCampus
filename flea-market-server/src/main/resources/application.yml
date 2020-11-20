@@ -1,5 +1,5 @@
 mybatis:
-  mapper-locations: ItemMapper.xml
+  mapper-locations: ItemMapper.xml, UserMapper.xml
   type-aliases-package: com.whu.fleamarket.entity
 
 spring:

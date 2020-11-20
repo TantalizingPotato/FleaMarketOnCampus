@@ -49,7 +49,7 @@ public class ItemController {
 
     @ApiOperation(value = "添加商品", notes = "根据Item对象向数据库中添加商品信息")
 //    @ApiImplicitParam(name = "item", value = "商品详细实体item", required = true, dataType = "Item")
-    @RequestMapping(value = "/post", method = RequestMethod.POST)
+    @RequestMapping(value = "/", method = RequestMethod.POST)
     public String postItem(Item item) {
 
         itemService.add(item);

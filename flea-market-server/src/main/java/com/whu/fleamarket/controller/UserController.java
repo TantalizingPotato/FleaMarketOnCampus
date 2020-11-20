@@ -31,7 +31,7 @@ public class UserController {
 
     @ApiOperation(value = "创建用户", notes = "根据User对象创建新用户")
 //    @ApiImplicitParam(name = "user", value = "包含用户信息的User对象", required = true, dataType = "User")
-    @RequestMapping(value = "/create", method = RequestMethod.POST)
+    @RequestMapping(value = "/", method = RequestMethod.POST)
     public String createUser(User user) {
 
         userService.add(user);

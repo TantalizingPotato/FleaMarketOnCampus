@@ -18,3 +18,13 @@ D:\Users\Desktop\Flea\Flea\obj\Debug\Flea.csproj.GenerateResource.cache
 D:\Users\Desktop\Flea\Flea\obj\Debug\Flea.csproj.CoreCompileInputs.cache
 D:\Users\Desktop\Flea\Flea\obj\Debug\Flea.exe
 D:\Users\Desktop\Flea\Flea\obj\Debug\Flea.pdb
+D:\Users\Desktop\新建文件夹 (2)\Flea\Flea\design-patterns\bin\Debug\Flea.exe.config
+D:\Users\Desktop\新建文件夹 (2)\Flea\Flea\design-patterns\bin\Debug\Flea.exe
+D:\Users\Desktop\新建文件夹 (2)\Flea\Flea\design-patterns\bin\Debug\Flea.pdb
+D:\Users\Desktop\新建文件夹 (2)\Flea\Flea\design-patterns\obj\Debug\Flea.csprojAssemblyReference.cache
+D:\Users\Desktop\新建文件夹 (2)\Flea\Flea\design-patterns\obj\Debug\Flea.Form1.resources
+D:\Users\Desktop\新建文件夹 (2)\Flea\Flea\design-patterns\obj\Debug\Flea.Properties.Resources.resources
+D:\Users\Desktop\新建文件夹 (2)\Flea\Flea\design-patterns\obj\Debug\Flea.csproj.GenerateResource.cache
+D:\Users\Desktop\新建文件夹 (2)\Flea\Flea\design-patterns\obj\Debug\Flea.csproj.CoreCompileInputs.cache
+D:\Users\Desktop\新建文件夹 (2)\Flea\Flea\design-patterns\obj\Debug\Flea.exe
+D:\Users\Desktop\新建文件夹 (2)\Flea\Flea\design-patterns\obj\Debug\Flea.pdb
