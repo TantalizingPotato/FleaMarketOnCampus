@@ -390,7 +390,7 @@ public class swaggerconfig {
 
   是由于我们的`Controller`方法中使用了，`return “success";`，而`”success“`字符串无法被解析为json格式；此时，数据库中的内容已经成功更新：
 
-  ![image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/swagger-ui_updateItem_result_2.jpg)
+  ![image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/swagger-ui_updateItem_result_2.png)
 
 ### 5.删除商品
 
@@ -464,7 +464,7 @@ public class swaggerconfig {
 
   是由于我们的`Controller`方法中使用了，`return “success";`，而`”success“`字符串无法被解析为json格式；此时，数据库中的相应条目已经被删除：
 
-  ![image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/swagger-ui_deleteItem_result_2.jpg)
+  ![image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/swagger-ui_deleteItem_result_2.png)
 
 ### 6. 查找所有在架上的商品
 
