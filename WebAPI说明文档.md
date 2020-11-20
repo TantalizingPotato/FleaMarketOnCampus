@@ -1,4 +1,4 @@
-### Web API 说明
+# Web API 说明
 
 > 本项目使用的 RESTful Web API 说明文档。 组员具体贡献表格见文档末尾。
 
@@ -58,11 +58,9 @@ public class swaggerconfig {
 
 `createRestApi`中用到的`ApiInfo`类对象则通过`apiInfo`方法生成，同样，方法体中对其属性进行了设置。
 
-***
+## UserController
 
-####  UserController
-
-##### 1. 查询全部
+### 1. 查询全部
 
 * 功能：从数据库获取所有商品列表
 
@@ -126,7 +124,7 @@ public class swaggerconfig {
 
   可以看到，查询结果以json格式返回。
 
-#####  2. 添加商品
+### 2. 添加商品
 
 * 功能：向数据库添加一条商品信息
 
@@ -243,7 +241,7 @@ public class swaggerconfig {
 
   ![image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/swagger-ui_postItem_result_2.png)
 
-##### 3. 查找商品
+### 3. 查找商品
 
 * 功能：根据id从数据库查找对应商品信息
 
@@ -298,7 +296,7 @@ public class swaggerconfig {
 
   可以看到，查询结果成功以json格式返回。
 
-##### 4. 更新商品
+### 4. 更新商品
 
 * 功能：根据传入的id和Item类对象，更新数据库中对应id的商品信息
 
@@ -394,7 +392,7 @@ public class swaggerconfig {
 
   ![image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/swagger-ui_updateItem_result_2.jpg)
 
-##### 5. 删除商品
+### 5.删除商品
 
 * 功能：根据id从数据库删除对应商品信息
 
@@ -468,7 +466,7 @@ public class swaggerconfig {
 
   ![image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/swagger-ui_deleteItem_result_2.jpg)
 
-##### 6. 查找所有在架上的商品
+### 6. 查找所有在架上的商品
 
 * 功能：查找当前所有在架上的商品
 
@@ -522,7 +520,7 @@ public class swaggerconfig {
 
   可以看到，查询结果成功以json格式返回。
 
-##### 7. 根据商品名查找商品
+### 7. 根据商品名查找商品
 
 * 功能：根据商品名，从数据库中查找出所有名称匹配的商品信息
 
@@ -576,7 +574,7 @@ public class swaggerconfig {
 
   可以看到，查询结果成功以json格式返回。
 
-##### 8. 根据物主id查找商品
+### 8. 根据物主id查找商品
 
 * 功能：从数据库中查询某物主拥有的全部商品的信息
 
@@ -631,9 +629,9 @@ public class swaggerconfig {
 
   可以看到，查询结果成功以json格式返回。
 
-####  UserController
+## UserController
 
-##### 1. 查询全部
+### 1. 查询全部
 
 * 功能：从数据库获取所有用户的列表
 
@@ -685,7 +683,7 @@ public class swaggerconfig {
 
   可以看到，查询结果成功以json格式返回。
 
-#####  2. 添加用户
+### 2. 添加用户
 
 * 功能：向数据库添加一条用户信息
 
@@ -785,7 +783,7 @@ public class swaggerconfig {
 
   ![image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/swagger-ui_createUser_result_2.png)
 
-##### 3. 查找用户
+### 3. 查找用户
 
 * 功能：根据用户id从数据库查找对应的一条用户信息
 
@@ -840,7 +838,7 @@ public class swaggerconfig {
 
   可以看到，查询结果成功以json格式返回。
 
-##### 4. 更新一条用户信息
+### 4. 更新一条用户信息
 
 * 功能：根据传入的id和User类对象，更新数据库中对应id的用户信息
 
@@ -933,7 +931,7 @@ public class swaggerconfig {
 
   ![image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/swagger-ui_updateUser_result_2.png)
 
-##### 5. 删除用户
+### 5. 删除用户
 
 * 功能：根据id从数据库删除相应用户的信息
 
@@ -1007,7 +1005,7 @@ public class swaggerconfig {
 
   ![image text](https://github.com/TantalizingPotato/FleaMarketOnCampus/blob/master/pics/swagger-ui_deleteUser_result_2.png)
 
-##### 6. 根据用户名查找用户
+### 6. 根据用户名查找用户
 
 * 功能：根据用户名，从数据库中查找出用户名匹配的一条用户信息
 
