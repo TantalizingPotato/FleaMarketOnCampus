@@ -58,7 +58,7 @@ public class ItemController {
     }
 
     @ApiOperation(value="查找商品", notes="根据商品id获取商品详细信息")
-    @ApiImplicitParam(name = "id", value = "商品id", required = true, dataType = "Integer" , paramType ="path")
+    @ApiImplicitParam(name = "id", value = "商品id", required = true, dataType = "String" , paramType ="path")
     @RequestMapping(value="/{id}", method=RequestMethod.GET)
     public Item getItem(@PathVariable String id) {
 
@@ -81,7 +81,7 @@ public class ItemController {
     }
 
     @ApiOperation(value="删除商品信息", notes="根据url中给定的id，删除数据库中相应的商品信息")
-    @ApiImplicitParam(name = "id", value = "商品id", required = true, dataType = "Integer", paramType = "path")
+    @ApiImplicitParam(name = "id", value = "商品id", required = true, dataType = "String", paramType = "path")
     @RequestMapping(value="/{id}", method=RequestMethod.DELETE)
     public String deleteItem(@PathVariable String id) {
         itemService.deleteById(Integer.parseInt(id));

@@ -21,7 +21,7 @@
     </select>
 
     <select id="findAllOnShelf" resultMap="BaseResultMap">
-        select id, pic_url, item_name, price, on_shelf, owner_id, category from items where on_shelf = 1
+        select * from items where on_shelf = 1
     </select>
 
     <insert id="add" parameterType="com.whu.fleamarket.entity.Item">

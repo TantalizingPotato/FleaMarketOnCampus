@@ -40,7 +40,7 @@ public class UserController {
     }
 
     @ApiOperation(value="查找用户", notes="根据用户id获取用户详细信息")
-    @ApiImplicitParam(name = "id", value = "用户id", required = true, dataType = "Integer", paramType = "path")
+    @ApiImplicitParam(name = "id", value = "用户id", required = true, dataType = "String", paramType = "path")
     @RequestMapping(value="/{id}", method=RequestMethod.GET)
     public User getUser(@PathVariable String id) {
 
@@ -55,7 +55,7 @@ public class UserController {
     }
 
     @ApiOperation(value="更新用户", notes="根据url指定的id和传来的user对象，更新相应的用户信息")
-    @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Integer", paramType = "path")
+    @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "String", paramType = "path")
     @RequestMapping(value="/{id}", method=RequestMethod.PUT)
     public String putUser(@PathVariable String id, @RequestBody User user) {
         user.setId(Integer.parseInt(id));
@@ -64,7 +64,7 @@ public class UserController {
     }
 
     @ApiOperation(value="删除用户", notes="根据url中给定的id，删除相应用户信息")
-    @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Integer", paramType = "path")
+    @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "String", paramType = "path")
     @RequestMapping(value="/{id}", method=RequestMethod.DELETE)
     public String deleteUser(@PathVariable String id) {
         userService.deleteById(Integer.parseInt(id));

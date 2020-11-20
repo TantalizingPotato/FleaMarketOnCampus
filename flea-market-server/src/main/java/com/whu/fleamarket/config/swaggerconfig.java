@@ -30,7 +30,6 @@ public class swaggerconfig {
         return new ApiInfoBuilder()
                 .title("校园二手商品交易平台 FleaMarket 后台 RESTful API")
                 .description("rest api 文档构建利器")
-//                .termsOfServiceUrl("http://blog.csdn.net/itguangit")
                 .contact("李光华，葛佳硕，刘青沐")
                 .version("2.0")
                 .build();
